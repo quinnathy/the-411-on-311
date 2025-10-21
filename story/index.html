@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The 411 on 311</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="blocktext">
+    <img src="title.png" alt="The 411 on 311" class ="inlinepic" style="margin-top:5vh">
+    <p>If you’re in a tenant group chat, chances are you’ve been urged to submit a 311 request. The reasons are varied and plenty: maybe there were mice sighted in the trash room. Maybe the elevators have been down for a while. Maybe you’re collectively sick of the scaffolding on your block.</p>
+
+    <p>Whatever the case, you’re probably familiar with NYC311 — more commonly referred to as 311 — and its nonemergency services. Any New Yorker is able to call, text, or submit an online request to 311 to ask the city to respond to a multitude of complaints, the most common causes being &#9312; illegal parking, &#9313; apartment maintenance, and &#9314; noise complaints.</p>
+
+    <p>That’s not even the tip of the iceberg of what 311 can do for you. Worried about the nutrition content of your child’s public school lunch? Make a <a href="https://portal.311.nyc.gov/article/?kanumber=KA-01482">School Food Complaint</a>. See a poor soul about to get scammed by a game of three-card monte? Report a <a href="https://portal.311.nyc.gov/article/?kanumber=KA-02060">Street Con Game</a>. You can report unsafe building demolition, mishandled horse-drawn carriages, or unsanitary tattoo parlors. It can get pretty specific!</p>
+    
+    <img src="circumcision.png" alt="A screenshot of a 311 page titled Circumcision. The body reads 'You can report any concerns about circumcision involving direct oral suctioning to the Department of Health. Call 311 or 212-NEW-YORK (212-639-9675) for help.'" class ="inlinepic">
+    <p class="caption">Case in point.</p>
+
+    <p>Many New Yorkers know about 311, and utilize it every day. But how quickly do these complaints get resolved by the city? And what kind of complaints take the longest to get around to?</p>
+  </section>
+
+
+    <section class="scrolly">
+
+      <div class="scroll__graphic">
+        <div id="map-container">
+          <svg id="map1"></svg>
+
+          <svg id="map2"></svg>
+        </div>
+      </div>
+
+      <div class="scroll__text">
+        <div class="step" data-step="1">
+          <h1>Requests by zip</h1>
+          <p>This is a map of the city with borders drawn along zip codes, color coded by the daily average number of 311 service requests made in each area from October 2020 to October 2025.</p>
+          <p>The <span class="tag" style="background-color:#084081;color:#084081">.</span> bluer the area, the higher the daily average. Similarly, the <span class="tag" style="background-color:#f7fcf0;color:#f7fcf0">.</span> paler it is, the less service requests are made. Overall, in the last five years, each zip code made an average of 41.6 complaints a day.</p>
+
+          
+
+        </div>
+        <div class="step" data-step="3">
+          <h1>Wait times by zip</h1>
+          <p>We then break it down by the average time it takes for 311 to close a service request, not taking into account cases that may still be unresolved. The <span class="tag" style="background-color:#67001f;color:#67001f">.</span> redder the area, the longer the wait.</p>
+          <p>If you look closely between the two, there's a slight inverse relationship between the maps. On most occasions, the darker the blue on the previous map, the lighter the red on this one. In other words, the more service requests you submit, the lower your overall average wait time.</p>
+
+          <div class="funfact">
+            <h1 style="margin:0; padding:0">Fun fact</h1>
+            <p style="margin:0"><br>You can’t see the area of zip code 10153 because it spans only one single city block in Manhattan, off the southeast corner of Central Park. However, 10153 has the longest average service request wait time in all of NYC, at <span class="num">4487.38 hours (~187 days)</span>. Its daily average complaint count is around a third at <span class="num">0.34</span>, far from the lowest complaint count in NYC. So what’s going on here?<br><br>
+
+            When sorting all of 10153’s service requests by the longest wait times, every single top complaint had the same category: Mobile Food Vendor. This piqued my interest. I then listed out every single Mobile Food Vendor complaint this zip code had, a list of <span class="num">311</span> entries, and investigated further. This is what I found:<br><br>
+
+            Since this dataset began — which technically is 2010, but we’re only working with 2020~present — someone or someones at 767 5th Avenue have been submitting service requests about food vendors with what I can only assume is a personal vendetta. In August 2023 alone, <span class="num">17</span> food vendor complaints were submitted. In 2024, one was submitted the day after Christmas; in 2025, one was submitted a day after New Year’s.<br><br>
+
+            On January 11, 2025, every single one of these requests were closed. Practically not a single one was marked as resolved before then, so one can only assume what happened on that fateful day. Given that the average wait was <span class="num">187 days</span>, and many of these complaints were registered years before January 11, 2025, <span class="num">187</span> is a reasonable number to accompany what I’m certain is a very reasonable story happening at 767 5th Ave.<br><br>
+
+            (On January 15, 2025, a Mobile Food Vendor service request was filed from 767 5th Avenue.)</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="blocktext">
+      <h1 style="margin-top: 10vh">Your request will be answered in...</h1>
+      <p>Zooming out — or perhaps "scrolling away" — we can summarize that 311 response times seem to be fair across all boroughs and zip codes. But what about when it comes to complaint types? We've established that for one Manhattan city block, getting the Department of Health and Mental Hygiene to respond to a food vendor complaint can be a Herculean task. Could that pattern follow for the rest of the city?</p>
+    </section>
+
+    <div class="step" data-step="6" id="chart">
+      <canvas id="waitChart"></canvas>
+    </div>
+
+    <section class="blocktext">
+      <p>On average, the longest request type it takes for the city to respond to is Window Guard, a requirement for buildings that meet certain conditions to install protective guards on their apartment windows, at an average wait of 786 days.</p>
+    </section>
+
+<!--
+    <h1>Who's behind the scenes</h1>
+
+    <p>NYC311 isn’t an agency by itself. Rather, it’s like a switchboard operator. After you send a service request through the online portal, 311 forwards it to one of NYC’s numerous government agencies, who will then take over your complaint and (hopefully) see it through. Between October 2020 and October 2025, the following agencies all had a hand in closing 311 service requests:</p>
+
+
+
+    <div class="tag-container" class = "step" data-step="tags">
+      <span class="tag" style="background-color: #f8961e;">Department of Consumer and Worker Protection (DCWP)</span>
+      <span class="tag" style="background-color: #4d908e;">Department of Environmental Protection (DEP)</span>
+      <span class="tag" style="background-color: #f8961e;">Department for the Aging (DFTA)</span>
+      <span class="tag" style="background-color: #f9844a;">Department of Homeless Services (DHS)</span>
+      <span class="tag" style="background-color: #f9c74f;">Department of Buildings (DOB)</span>
+      <span class="tag" style="background-color: #90be6d;">Department of Education (DOE)</span>
+      <span class="tag" style="background-color: #43aa8b;">Department of Health and Mental Hygiene (DOHMH)</span>
+      <span class="tag" style="background-color: #4d908e;">Department of Information Technology and Telecommunications (DoITT)</span>
+      <span class="tag" style="background-color: #577590;">Department of Transportation (DOT)</span>
+      <span class="tag" style="background-color: #277da1;">Department of Parks and Recreation (DPR)</span>
+      <span class="tag" style="background-color: #7209b7;">Department of Sanitation (DSNY)</span>
+      <span class="tag" style="background-color: #b5179e;">Economic Development Corporation (EDC)</span>
+      <span class="tag" style="background-color: #4895ef;">Department of Housing Preservation and Development (HPD)</span>
+      <span class="tag" style="background-color: #3a86ff;">New York Police Department (NYPD)</span>
+      <span class="tag" style="background-color: #ff006e;">Office of Special Enforcement (OSE)</span>
+      <span class="tag" style="background-color: #06d6a0;">Office of Technology and Innovation (OTI)</span>
+      <span class="tag" style="background-color: #118ab2;">Taxi and Limousine Commission (TLC)</span>
+    </div>
+
+
+
+  <section class="scrolly">
+
+    <div class="scroll__graphic">
+      <div class="chart-container" style="width: 600px; margin: 0 auto;">
+      <canvas id="agencyPie"></canvas>
+      </div>
+    </div>
+
+    <div class="scroll__text">
+      <div class="step" data-step="1">When it comes to service requests, the <span class="tag" style="background-color: #3a86ff;">NYPD</span> responds to, on average, 3,890 requests a day.</div>
+      <div class="step" data-step="2">Info Box 2 — Map #1</div>
+      <div class="step" data-step="3">Transition to Map #2</div>
+      <div class="step" data-step="4">Info Box 1 — Map #2</div>
+      <div class="step" data-step="5">Info Box 2 — Map #2</div>
+    </div>
+
+
+  </section>
+-->
+
+  
+
+  <div id="tooltip" style="
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 6px 8px;
+  pointer-events: none;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  display: none;
+  "></div>
+
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://unpkg.com/scrollama"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
