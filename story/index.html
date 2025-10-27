@@ -8,10 +8,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet">
 </head>
 <body>
   <section class="blocktext">
-    <img src="title.png" alt="The 411 on 311" class ="inlinepic" style="margin-top:5vh">
+    <img src="title.png" alt="The 411 on 311" class ="inlinepic" style="margin-top:5vh" id="top">
     <p>If you’re in a tenant group chat, chances are you’ve been urged to submit a 311 request. The reasons are varied and plenty: maybe there were mice sighted in the trash room. Maybe the elevators have been down for a while. Maybe you’re collectively sick of the scaffolding on your block.</p>
 
     <p>Whatever the case, you’re probably familiar with NYC311 — more commonly referred to as 311 — and its nonemergency services. Any New Yorker is able to call, text, or submit an online request to 311 to ask the city to respond to a multitude of complaints, the most common causes being &#9312; illegal parking, &#9313; apartment maintenance, and &#9314; noise complaints.</p>
@@ -21,7 +22,48 @@
     <img src="circumcision.png" alt="A screenshot of a 311 page titled Circumcision. The body reads 'You can report any concerns about circumcision involving direct oral suctioning to the Department of Health. Call 311 or 212-NEW-YORK (212-639-9675) for help.'" class ="inlinepic">
     <p class="caption">Case in point.</p>
 
-    <p>Many New Yorkers know about 311, and utilize it every day. But how quickly do these complaints get resolved by the city? And what kind of complaints take the longest to get around to?</p>
+    <h1>Team effort</h1>
+
+    <p>311 isn’t an agency by itself. Rather, it’s like a switchboard operator. After you send a service request through the online portal, 311 forwards it to one of NYC’s numerous government agencies, who will then take over your complaint and (hopefully) see it through.</p>
+
+    <p>Between October 2020 and October 2025, the following agencies all had a hand in closing 311 service requests:</p>
+  </section>
+
+    <div class="tag-container" class = "step" data-step="tags">
+      <span class="tag" style="background-color: #FCCC3A;">Department of Consumer and Worker Protection (DCWP)</span>
+      <span class="tag" style="background-color: #96CF34;">Department of Environmental Protection (DEP)</span>
+      <span class="tag" style="background-color: #E3BFAF;">Department for the Aging (DFTA)</span>
+      <span class="tag" style="background-color: #E3AFD4;">Department of Homeless Services (DHS)</span>
+      <span class="tag" style="background-color: #F0B478;">Department of Buildings (DOB)</span>
+      <span class="tag" style="background-color: #78CAF0;">Department of Education (DOE)</span>
+      <span class="tag" style="background-color: #B678F0;">Department of Health and Mental Hygiene (DOHMH)</span>
+      <span class="tag" style="background-color: #F08D8D;">Department of Information Technology and Telecommunications (DoITT)</span>
+      <span class="tag" style="background-color: #96D6D2;">Department of Transportation (DOT)</span>
+      <span class="tag" style="background-color: #AED444;">Department of Parks and Recreation (DPR)</span>
+      <span class="tag" style="background-color: #44C6D4;">Department of Sanitation (DSNY)</span>
+      <span class="tag" style="background-color: #98C977;">Economic Development Corporation (EDC)</span>
+      <span class="tag" style="background-color: #E0C769;">Department of Housing Preservation and Development (HPD)</span>
+      <span class="tag" style="background-color: #E06969;">New York Police Department (NYPD)</span>
+      <span class="tag" style="background-color: #6993E0;">Office of Special Enforcement (OSE)</span>
+      <span class="tag" style="background-color: #F090B1;">Office of Technology and Innovation (OTI)</span>
+      <span class="tag" style="background-color: #FFC821;">Taxi and Limousine Commission (TLC)</span>
+    </div>
+
+  <section class="blocktext">
+
+    <p>Some agencies are called upon more than others. Breaking it down by agency, the daily service request allocation looks something like this.</p>
+
+    <iframe class="datawrapper" title="Average daily 311 service requests by department" aria-label="Donut Chart" id="datawrapper-chart-s0t8I" src="https://datawrapper.dwcdn.net/s0t8I/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="557" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+
+    <p>Over ¾ of the city's service requests are handled by the New York Police Department, the Department of Housing Preservation and Development, and the Department of Sanitation. This makes sense, given that the most requested services are in response to &#9312; illegal parking, &#9313; apartment maintenance, and &#9314; noise complaints.</p>
+
+    <p>For the most part, service requests handle residential issues. Between October 2020 and October 2025, the most commonly reported issues are as follows, measured by the number of logged complaints.</p>
+
+    <iframe class="datawrapper" title="Total counts of 311 service requests, by complaint type" aria-label="Bar Chart" id="datawrapper-chart-zXIEq" src="https://datawrapper.dwcdn.net/zXIEq/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="349" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+
+
+    <p>Geographical location can determine complaint volume as well. Within each borough and each neighborhood, the daily number of service requests can differ drastically, along with their associated wait times.</p>
+
   </section>
 
 
@@ -32,6 +74,8 @@
           <svg id="map1"></svg>
 
           <svg id="map2"></svg>
+
+          <svg id="map3"></svg>
         </div>
       </div>
 
@@ -39,29 +83,31 @@
         <div class="step" data-step="1">
           <h1>Requests by zip</h1>
           <p>This is a map of the city with borders drawn along zip codes, color coded by the daily average number of 311 service requests made in each area from October 2020 to October 2025.</p>
-          <p>The <span class="tag" style="background-color:#084081;color:#084081">.</span> bluer the area, the higher the daily average. Similarly, the <span class="tag" style="background-color:#f7fcf0;color:#f7fcf0">.</span> paler it is, the less service requests are made. Overall, in the last five years, each zip code made an average of 41.6 complaints a day.</p>
-
-          
-
+          <p>The <span class="tag" style="background-color:#084081;color:white">bluer</span> the area, the higher the daily average. Inversely, the paler it is, the less service requests are made. Overall, in the last five years, each zip code made an average of <b>41.6 complaints</b> a day.</p>
         </div>
-        <div class="step" data-step="3">
+
+        <div class="step" data-step="2">
           <h1>Wait times by zip</h1>
-          <p>We then break it down by the average time it takes for 311 to close a service request, not taking into account cases that may still be unresolved. The <span class="tag" style="background-color:#67001f;color:#67001f">.</span> redder the area, the longer the wait.</p>
-          <p>If you look closely between the two, there's a slight inverse relationship between the maps. On most occasions, the darker the blue on the previous map, the lighter the red on this one. In other words, the more service requests you submit, the lower your overall average wait time.</p>
+          <p>We then break it down by the average time it takes for 311 to close a service request, not taking into account cases that may still be unresolved. The <span class="tag" style="background-color:#67001f;color:white">redder</span> the area, the longer the wait.</p>
+          <p>If you look closely between the two, there's a slight <b>inverse relationship</b> between the maps. On most occasions, the darker the blue on the previous map, the lighter the red on this one. That's not a cause-and-effect relationship, though. The more service requests you submit, the more opportunities 311 will have to solve your case faster, so the lower your overall average wait time.</p>
 
-          <div class="funfact">
-            <h1 style="margin:0; padding:0">Fun fact</h1>
-            <p style="margin:0"><br>You can’t see the area of zip code 10153 because it spans only one single city block in Manhattan, off the southeast corner of Central Park. However, 10153 has the longest average service request wait time in all of NYC, at <span class="num">4487.38 hours (~187 days)</span>. Its daily average complaint count is around a third at <span class="num">0.34</span>, far from the lowest complaint count in NYC. So what’s going on here?<br><br>
+          <h1 style="margin:0; padding:0">:Click to expand on an interesting find!</h1>
+          <p style="margin:0">You can’t see the area of zip code 10153 because it spans only one single city block in Manhattan, off the southeast corner of Central Park. However, 10153 has the longest average service request wait time in all of NYC, at <b>4487.38 hours (~187 days)</b>. Its daily average complaint count is around a third at <b>0.34</b>, far from the lowest complaint count in NYC. So what’s going on here?<br><br>
 
-            When sorting all of 10153’s service requests by the longest wait times, every single top complaint had the same category: Mobile Food Vendor. This piqued my interest. I then listed out every single Mobile Food Vendor complaint this zip code had, a list of <span class="num">311</span> entries, and investigated further. This is what I found:<br><br>
+          When sorting all of 10153’s service requests by the longest wait times, every single top complaint had the same category: Mobile Food Vendor. This piqued my interest. I then listed out every single Mobile Food Vendor complaint this zip code had, a list of <b>311</b> entries, and investigated further. This is what I found:<br><br>
 
-            Since this dataset began — which technically is 2010, but we’re only working with 2020~present — someone or someones at 767 5th Avenue have been submitting service requests about food vendors with what I can only assume is a personal vendetta. In August 2023 alone, <span class="num">17</span> food vendor complaints were submitted. In 2024, one was submitted the day after Christmas; in 2025, one was submitted a day after New Year’s.<br><br>
+          Since this dataset began — which technically is 2010, but we’re only working with 2020~present — someone or someones at 767 5th Avenue have been submitting service requests about food vendors with what I can only assume is a personal vendetta. In August 2023 alone, <b>17</b> food vendor complaints were submitted. In 2024, one was submitted the day after Christmas; in 2025, one was submitted a day after New Year’s.<br><br>
 
-            On January 11, 2025, every single one of these requests were closed. Practically not a single one was marked as resolved before then, so one can only assume what happened on that fateful day. Given that the average wait was <span class="num">187 days</span>, and many of these complaints were registered years before January 11, 2025, <span class="num">187</span> is a reasonable number to accompany what I’m certain is a very reasonable story happening at 767 5th Ave.<br><br>
+          On January 11, 2025, every single one of these requests were closed. Practically not a single one was marked as resolved before then, so one can only assume what happened on that fateful day. Given that the average wait was <b>187 days</b>, and many of these complaints were registered years before January 11, 2025, <b>187</b> is a reasonable number to accompany what I’m certain is a very reasonable story happening at 767 5th Ave.<br><br>
 
-            (On January 15, 2025, a Mobile Food Vendor service request was filed from 767 5th Avenue.)</p>
-          </div>
+          (On January 15, 2025, a Mobile Food Vendor service request was filed from 767 5th Avenue.)</p>
 
+        </div>
+
+        <div class="step" data-step="3" style="margin-bottom:60vh;">
+          <h1>Wait time by requests</h1>
+          <p>To balance out the inverse relationship, we weigh wait times by the number of service requests, giving us a better estimate of how long exactly each zip code waits for 311 to resolve their issues. In other words, areas with very few complaints no longer swing the results with extreme averages — instead, this map “shrinks” their estimates toward the citywide average, highlighting true differences in performance rather than random noise.</p>
+          <p>This highlights a few areas that have prominently slower wait times, with a sluggish <b>Northern Queens, Midtown Manhattan,</b> and <b>Upper West Side.</b></p>
         </div>
 
       </div>
@@ -69,79 +115,48 @@
     </section>
 
     <section class="blocktext">
-      <h1 style="margin-top: 10vh">Your request will be answered in...</h1>
-      <p>Zooming out — or perhaps "scrolling away" — we can summarize that 311 response times seem to be fair across all boroughs and zip codes. But what about when it comes to complaint types? We've established that for one Manhattan city block, getting the Department of Health and Mental Hygiene to respond to a food vendor complaint can be a Herculean task. Could that pattern follow for the rest of the city?</p>
+      <h1 style="margin-top: 10vh">Your issue will be resolved in...</h1>
+      <p>Geographical divisions aside, what about wait times when it comes to complaint types? We've established that for one Manhattan city block, getting the Department of Health and Mental Hygiene to respond to a food vendor complaint can be a Herculean task. Could that pattern follow for the rest of the city?</p>
+
+      <iframe title="Longest waits for complaint resolution, in hours" aria-label="Bar Chart" id="datawrapper-chart-Q3W3c" src="https://datawrapper.dwcdn.net/Q3W3c/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="323" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+
+      <p>The longest request type it takes to resolve is <b>Window Guard</b>, a requirement for buildings that meet certain conditions to install protective guards on their apartment windows, at an average wait of 786 days. That's just over two years.</p>
+
+      <img src="windowgurad.png" class ="inlinepic">
+      <p class="caption">An infographic from the <a href="https://www.lawhelpny.org/resource/window-guards">HPD</a> about installing window guards.</p>
+
+      <p>This long wait makes sense. Installing window guards usually require specialists to come in for construction, as well as a bouncing back-and-forth between 311, building management, and the tenant.</p>
+
+      <p>Tens of thousands of hours is still a lot, though. Thankfully, the more commonly filed complaints don't take nearly as long. Let's look back on the top 10 most common service requests, and see how their wait times measure up.</p>
+
+      <iframe title="Top 10 complaints by wait times, in hours" aria-label="Bar Chart" id="datawrapper-chart-uLuy2" src="https://datawrapper.dwcdn.net/uLuy2/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="305" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+
+      <p>Half of the common complaints are cleared up in ~3 hours or less. Almost all of them are resolved within a week. <b>Unsanitary Conditions</b>, which address <a href="https://portal.311.nyc.gov/article/?kanumber=KA-01074">various residential complaints</a> like mice infestations or mold growth, take the longest to resolve at ~24 days.</p>
+
+      <p>So if your biggest concerns are everyday apartment maintenance requests, or a car parked in the wrong spot, you're in luck: that's nothing a 311 request can't fix in a matter of hours. But if you happen to live in Manhattan, at the zip code 10153, and you've got a problem with the halal cart on the corner, you're just going to have to be patient.</p>
+
+      <p class="attribution">All data used was taken from this NYC OpenData dataset: <a href="https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9">311 Service Requests from 2010 to Present</a>. The <a href="https://ncase.me/nutshell/">expandable Nutshell tool</a> was made by Nicky Case.</p>
+
+      <button id="backToTop">Back to top</button>
+
+      
+
+      
+      
     </section>
-
-    <div class="step" data-step="6" id="chart">
-      <canvas id="waitChart"></canvas>
-    </div>
-
-    <section class="blocktext">
-      <p>On average, the longest request type it takes for the city to respond to is Window Guard, a requirement for buildings that meet certain conditions to install protective guards on their apartment windows, at an average wait of 786 days.</p>
-    </section>
-
-<!--
-    <h1>Who's behind the scenes</h1>
-
-    <p>NYC311 isn’t an agency by itself. Rather, it’s like a switchboard operator. After you send a service request through the online portal, 311 forwards it to one of NYC’s numerous government agencies, who will then take over your complaint and (hopefully) see it through. Between October 2020 and October 2025, the following agencies all had a hand in closing 311 service requests:</p>
-
-
-
-    <div class="tag-container" class = "step" data-step="tags">
-      <span class="tag" style="background-color: #f8961e;">Department of Consumer and Worker Protection (DCWP)</span>
-      <span class="tag" style="background-color: #4d908e;">Department of Environmental Protection (DEP)</span>
-      <span class="tag" style="background-color: #f8961e;">Department for the Aging (DFTA)</span>
-      <span class="tag" style="background-color: #f9844a;">Department of Homeless Services (DHS)</span>
-      <span class="tag" style="background-color: #f9c74f;">Department of Buildings (DOB)</span>
-      <span class="tag" style="background-color: #90be6d;">Department of Education (DOE)</span>
-      <span class="tag" style="background-color: #43aa8b;">Department of Health and Mental Hygiene (DOHMH)</span>
-      <span class="tag" style="background-color: #4d908e;">Department of Information Technology and Telecommunications (DoITT)</span>
-      <span class="tag" style="background-color: #577590;">Department of Transportation (DOT)</span>
-      <span class="tag" style="background-color: #277da1;">Department of Parks and Recreation (DPR)</span>
-      <span class="tag" style="background-color: #7209b7;">Department of Sanitation (DSNY)</span>
-      <span class="tag" style="background-color: #b5179e;">Economic Development Corporation (EDC)</span>
-      <span class="tag" style="background-color: #4895ef;">Department of Housing Preservation and Development (HPD)</span>
-      <span class="tag" style="background-color: #3a86ff;">New York Police Department (NYPD)</span>
-      <span class="tag" style="background-color: #ff006e;">Office of Special Enforcement (OSE)</span>
-      <span class="tag" style="background-color: #06d6a0;">Office of Technology and Innovation (OTI)</span>
-      <span class="tag" style="background-color: #118ab2;">Taxi and Limousine Commission (TLC)</span>
-    </div>
-
-
-
-  <section class="scrolly">
-
-    <div class="scroll__graphic">
-      <div class="chart-container" style="width: 600px; margin: 0 auto;">
-      <canvas id="agencyPie"></canvas>
-      </div>
-    </div>
-
-    <div class="scroll__text">
-      <div class="step" data-step="1">When it comes to service requests, the <span class="tag" style="background-color: #3a86ff;">NYPD</span> responds to, on average, 3,890 requests a day.</div>
-      <div class="step" data-step="2">Info Box 2 — Map #1</div>
-      <div class="step" data-step="3">Transition to Map #2</div>
-      <div class="step" data-step="4">Info Box 1 — Map #2</div>
-      <div class="step" data-step="5">Info Box 2 — Map #2</div>
-    </div>
-
-
-  </section>
--->
 
   
 
   <div id="tooltip" style="
-  position: absolute;
-  background: white;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 6px 8px;
-  pointer-events: none;
-  font-size: 0.9rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-  display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px 8px;
+    pointer-events: none;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    display: none;
   "></div>
 
 
@@ -149,6 +164,24 @@
   <script src="https://unpkg.com/scrollama"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+  <script src="https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.js"></script>
+  <style>
+    .nutshell-bubble-from{
+        display: none;
+    }
+    .nutshell-heading-embed {
+      display:none;
+    }
+  </style>
+
+  <script>
+
+    const backToTop = document.getElementById("backToTop");
+
+    backToTop.addEventListener("click", function() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
 
 
   <script src="script.js"></script>

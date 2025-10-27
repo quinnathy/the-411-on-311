@@ -2,8 +2,8 @@ body {
   font-family: sans-serif;
   margin: 0;
   line-height: 1.5;
-  background: #1e1e29;
-  background: linear-gradient(180deg,rgba(30, 30, 41, 1) 0%, rgba(48, 48, 54, 1) 100%);
+  background: white;
+
 }
 
 section {
@@ -11,19 +11,27 @@ section {
 }
 
 a {
-  color: #ffb703;
+  color: #0F78BF;
   font-weight: 500;
   text-decoration-style: dotted;
   transition:0.3s;
 }
 
 a:hover {
-  color: #fb8500;
+  color: #074770;
+}
+
+h1 {
+  margin-top: 8vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 2rem;
 }
 
 .blocktext {
   margin: 0 50vh;
-  color: white;
+  color: black;
   font-size: 1.2rem;
   font-family: "IBM Plex Serif", serif;
   font-weight: 400;
@@ -36,10 +44,18 @@ a:hover {
 
 .caption {
   font-size: 0.9rem;
+  font-family: "Arial", sans-serif;
   text-align: center;
   font-weight: 400;
   margin-top: 1vh;
-  color: #8ecae6;
+  color: gray;
+}
+
+.attribution {
+  font-size: 0.9rem;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  color: gray;
 }
 
 .tag-container {
@@ -52,8 +68,8 @@ a:hover {
 }
 
 .tag {
-  color: white;
-  font-family: "Arial", sans-serif;
+  color: black;
+  font-family: "Fira Mono", "DejaVu Sans Mono", "Consolas", monospace;
   font-weight: bold;
   border-radius: 20px;
   padding: 0.4rem 0.8rem;
@@ -63,7 +79,7 @@ a:hover {
 .funfact {
   margin-top: 3vh;
   border-radius: 10px;
-  background-color: #121111;
+  background-color: #FFDD99;
   padding: 1rem;
 }
 
@@ -89,6 +105,20 @@ a:hover {
   height: 100%;
 }
 
+#map-container svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.4s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#map1 { z-index: 1; }
+#map2 { z-index: 2; }
+#map3 { z-index: 3; }
+
+
 #map1, #map2 {
   position: absolute;
   top: 0;
@@ -103,7 +133,13 @@ a:hover {
 
 #map2 {
   opacity: 0;
-  pointer-events: none; /* so you can’t accidentally scroll over it */
+  pointer-events: none; 
+  transition: opacity 1s ease;
+}
+
+#map3 {
+  opacity: 0;
+  pointer-events: none; 
   transition: opacity 1s ease;
 }
 
@@ -114,9 +150,9 @@ a:hover {
 }
 
 .step {
-  margin: 90vh 10vh 0 3vh;
+  margin: 50vh 10vh 0 3vh;
   font-size: 1.2rem;
-  color: white;
+  color: black;
   font-size: 1.2rem;
   font-family: "IBM Plex Serif", serif;
   font-weight: 400;
@@ -128,7 +164,7 @@ a:hover {
 }
 
 .num {
-  color: #FB8500;
+  font-weight: 600;
 }
 
 #chart {
@@ -138,4 +174,54 @@ a:hover {
 #waitChart {
   width: 80%;
   margin: 2rem auto;
+}
+
+.datawrapper {
+  margin: 2vh 0;
+}
+
+#backToTop {
+  width:100%;
+  border-radius: 20px;
+  padding: 1vh;
+  border-style: 3px;
+  transition: 0.2s ease-in-out;
+  margin-top: 1vh;
+  margin-bottom: 10vh;
+  font-family: "Fira Mono", "DejaVu Sans Mono", "Consolas", monospace;
+  font-weight: bold;
+}
+
+#backToTop:hover {
+  cursor:pointer;
+  background-color: black;
+  color: white;
+}
+
+/* nutshell related */
+
+nutshell-bubble-from{
+  display:none;
+}
+nutshell-bubble-overflow-close {
+  margin: 10vh;
+}
+
+@media only screen and (max-width: 1250px) {
+  .blocktext {
+    margin: 0 20vh;
+  }
+
+  .tag-container {
+    margin: 5vh 10vh;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .blocktext {
+    margin: 0 2vh;
+  }
+  .tag-container {
+    margin: 5vh 2vh;
+  }
 }
