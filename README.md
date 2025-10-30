@@ -1,6 +1,9 @@
 # NYC311 data analysis + viz
 
-To put data journalism skills to practical application, I wrote a visual essay on insights into 311 service requests. This project involved Python/Jupyter, pandas, GeoJSON, D3.js, Datawrapper, HTML/CSS/JavaScript.
+
+I built a scroll-driven data story (inspired by <i>The Pudding</i> and *NYT Upshot-style* visual essays) that investigates how long New Yorkers wait for 311 complaints to be resolved, and how that varies by ZIP code and type of service request. The story mixes data analysis, cartography, and frontend storytelling to uncover patterns of inequality and inefficiency in city service delivery.
+
+This project involved Python/Jupyter, pandas, GeoJSON, D3.js, Datawrapper, HTML/CSS/JavaScript.
 
 The finalized project can be seen here[^1]: https://quinnmadethis.com/the-411-on-311
 
