@@ -133,7 +133,9 @@ The analysis flagged ZIP 10153 as a significant outlier — the longest average 
 
 Drilling into the raw data revealed that virtually all of the extreme wait times originated from a single address: **767 5th Avenue** (the GM Building). The complaints were all **Mobile Food Vendor** requests — and nearly all of them had the same `Closed Date` of **January 11, 2025**, regardless of when they were originally submitted.
 
-This points to a bulk administrative closure: dozens of long-pending complaints were resolved simultaneously on a single date, inflating the average wait time dramatically. Whether this reflects a real enforcement action, a data correction, or a system artifact is unclear from the data alone — but it illustrates how administrative patterns in complaint closure can distort geographic analysis, and why the Bayesian-adjusted map tells a more honest story than the raw averages.
+This points to a bulk administrative closure: dozens of long-pending complaints were resolved simultaneously on a single date, inflating the average wait time dramatically. Or in other words: someone probably got fed up with all the complaints and wiped it clean. They might've taken the food vendor out back and shot him. 
+
+Just kidding! They didn't do that. Because the same ZIP has since resumed making the exact same complaint.
 
 ---
 
@@ -163,7 +165,7 @@ These files were loaded into **D3.js v7** (Mercator projection) to render intera
 
 5. **The fastest-resolving complaint type** is Noise - House of Worship, at under 1 hour on average.
 
-6. **High complaint volume correlates with faster resolution**, not slower — suggesting the city's capacity scales with demand in ways that disadvantage quieter neighborhoods.
+6. **High complaint volume correlates with faster resolution**, not slower — suggesting the city's capacity scales with demand in ways that disadvantage neighborhoods that don't usually call 311 for various reasons.
 
 7. **Statistical outliers can reflect administrative behavior**, not just service quality. The ZIP 10153 anomaly shows how bulk data closures can create misleading signals in geographic analysis.
 
